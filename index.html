@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
+
 <body>
     <main>
 
         <section id="login">
             <div id="imagem">
-             
+
             </div>
 
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem vindo (a) novamente. Faça login para acessar a sua conta e poder fazer as configurações no seu ambiente. </p>
-                <form action="cadastro.js" method="post">
-                    <p>
-                        <label for="isu">Usuário</label>
-                        <input type="text" name="usuario" id="isu">
-                    </p>
-                    <p>
-                        <label for="isen">Senha</label>
-                        <input type="password" name="senha" id="isen">
-                    </p>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
+                <p>Seja bem vindo (a) novamente. Faça login para acessar a sua conta e poder fazer as configurações no
+                    seu ambiente. </p>
+                <form action="cadastro.js" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Digite seu email"
+                            autocomplete="email" required maxlength="30">
+                        <label for="ilogin"></label>
+
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite a sua senha"
+                            autocomplete="current-password" required minlength="8" maxlength="15">
+                        <label for="isenha"></label>
+
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+
+                    <div><a href="#">Esqueci a senha<span class="material-symbols-outlined">email</span></a></div>
                 </form>
             </div>
 
@@ -36,4 +52,5 @@
 
     </main>
 </body>
+
 </html>
